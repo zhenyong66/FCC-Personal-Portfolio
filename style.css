@@ -68,7 +68,7 @@ h2 {
   text-align: center;
 }
 
-.welcome-section > p {
+.welcome-section>p {
   font-size: 2rem;
   font-weight: 200;
   font-style: italic;
@@ -79,7 +79,6 @@ h2 {
   text-align: center;
   padding: 10rem 2rem;
   background-color: #45567d;
-  
 }
 
 .projects-section-header {
@@ -159,11 +158,11 @@ img {
   background: #3a3d40;
 }
 
-.contact-section-header > p {
+.contact-section-header>p {
   font-style: italic;
 }
 
-.contact-links {
+#contact-links {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -196,4 +195,30 @@ footer {
   background: #3a3d40;
   border-top: 4px solid #be3144;
   font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .welcome-section>p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #contact-links {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+.light-mode {
+  background-color: #f0f0f0;
+  color: #3a3d40;
 }

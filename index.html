@@ -17,13 +17,13 @@
   <nav id="navbar">
     <ul class="nav-list">
       <li><a href="#welcome-section">About</a></li>
-      <li><a href="#projects">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#profile-link">Contacts</a></li>
     </ul>
   </nav>
   <!--END NAVBAR-->
   <!--START WELCOME SECTION-->
-  <section class="welcome-section">
+  <section id="welcome-section" class="welcome-section">
     <h1>Hey I am Zhenyong Shin</h1>
     <p>PhD student/Musician/Video Editor/Web Developer</p>
   </section>
@@ -99,6 +99,12 @@
     <p>Coded by Zhenyong Shin</p>
   </footer>
   <!--FOOTER-->
+  <script>
+    function darkMode(id) {
+      let element = document.getElementById(id);
+      element.classList.toggle("light-mode")
+    }
+  </script>
 </body>
 
 </html>
